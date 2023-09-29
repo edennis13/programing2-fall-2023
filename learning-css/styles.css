@@ -1,0 +1,46 @@
+li {
+	color:orange;
+	list-style-position: inside;
+}
+h1,h2{
+	color:green;
+}
+div {
+text-align: center;
+}
+body {
+    
+    background-image: url('https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww&w=1000&q=80'); 
+
+    
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+}
+
+body {
+font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+	font-size: 100px;
+}
+
+body{
+	border-color:dodgerblue;
+	border-style: double;
+	border-width: thick;
+}
+img{
+	height:500px ;
+	width:auto;
+	padding:50px;
+	opacity: .5;
+
+}
+.header {
+	background-color: grey;
+}
+
+
+
