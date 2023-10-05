@@ -27,3 +27,13 @@ body {
   padding: 32px;
   margin-left: 450px;
 }
+.four{
+  background:magenta;
+  border: purple 5px solid;
+  width: 50px;
+  /* CHANGE ME */
+  padding-left:25px;
+  padding-right:25px;
+  padding-bottom: 50px;
+  margin-left: 0px;
+}
