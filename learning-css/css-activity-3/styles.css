@@ -1,0 +1,17 @@
+.left-button{
+	background-color: black;
+	color: white;
+}
+.right-button{
+	background-color:yellow;
+	color: black;
+}
+
+.right-button,.left-button{
+	font-size: 28px;
+	font-family:Helvetica, "Times New Roman",sans-serif ;
+}
+
+.right-button, .left-button:hover{
+	
+}
