@@ -1,0 +1,101 @@
+*{
+font-family: 'fantasy;',copperplate,sans-serif;
+}
+h1{
+background-color:whitesmoke ;
+border: indianred 3px dashed;
+padding:8px;
+color: indianred;
+text-align: center;
+margin-top:10px;
+}
+#ethan{
+border:indianred dashed 3px;
+margin:auto;
+background-color: white;
+padding:20px;
+display:inline-block;
+}
+.linked-buttons{
+margin-left: auto;
+margin-right: auto;
+margin-top:17px;
+margin-bottom:17px;
+background-color: whitesmoke ;
+border: indianred 3px dashed;
+padding:50px;
+font-size: 35px;
+color:indianred;
+}
+a { color:red } /* Globally */
+/* Each state */
+a:visited { text-decoration: none; color:red; }
+a:hover { text-decoration: none; color:red; }
+a:focus { text-decoration: none; color:red; }
+a:hover, a:active { text-decoration: none; color:red }
+#footer{
+border: solid black 3px;
+padding-top: 10px;
+font-size: 15px;
+font-weight:none;
+}
+#cereal{
+border:indianred 2px dashed ;
+padding:25px;
+width: 800px;
+height:600px;
+margin:auto;
+background-color: whitesmoke;	
+}
+.information{
+border:indianred 2px solid;
+padding:10px;
+margin-top:50px;
+margin-bottom:50px;
+margin-left:auto;
+margin-right:auto;
+}
+.description{
+border:black 2px solid;
+padding:10px;
+margin:auto;
+}
+.Ingredients{
+border:black 2px solid;
+padding:10px;
+margin:auto;
+margin-top:10px;
+}
+.Instructions{
+border:black 2px solid;
+padding:10px;
+margin:auto;
+margin-top:10px;
+}
+#kugel{
+border:indianred 2px dashed ;
+padding:25px;
+width: 800px;
+height:600px;
+margin:auto;
+background-color: whitesmoke;
+}	
+#mac{
+border:indianred 2px dashed ;
+padding:25px;
+width: 700px;
+height:600px;
+margin:auto;
+background-color: whitesmoke;
+}
+#carousel-size{
+height: 600px;
+width:800px;
+display:inline-block;
+margin:30px;
+}
+.card{
+margin:50px;
+background-color: whitesmoke;
+a
+}

@@ -4,24 +4,75 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Recipe Book</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body style="background-color:papayawhip;">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
         <center>
             <h1><u>Ethan's Recipes</u></h1>
         </center>
-        <center><img src="images/large_user_4577190_975.jpg" alt=" Ethan!" width="350" height="300"></center>
+        <center>
+            <div id="ethan">
+                <center><img src="images/large_user_4577190_975.jpg" alt=" Ethan!" width="350" height="300"></center>
+            </div>
+        </center>
         <Center>
-            <ul>
-                <li>
-                    <button><a href="recipes/cereal.html"target="_blank" >Ethan's OG Cereal</a></button>
-                </li>
-                <li>
-                    <button><a href="recipes/kugel.html"target="_blank" >Mom's Killer Kugel</a></button> 
-                </li>
-                <li>
-                    <button><a href="recipes/mac.html"target="_blank" >Magnificent Mac and Cheese</a></button>
-                </li>
-            </ul>
+            <div class="linked-buttons">
+                <a href="recipes/cereal.html"target="_blank" >Ethan's OG Cereal</a>
+            </div>
+            <div class="linked-buttons">
+                <a href="recipes/kugel.html"target="_blank" >Mom's Killer Kugel</a>
+            </div>
+            <div class="linked-buttons">
+                <a href="recipes/mac.html"target="_blank" >Magnificent Mac and Cheese</a>
+            </div>
+            </div>
+            <div id="carousel-size">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Cereal-small.jpg" class="d-block w-100" alt="Cereal">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/kugel-5-scaled-small.jpg" class="d-block w-100" alt="Kugel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/baked-mac-small_.jpg" class="d-block w-100" alt="MAC">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/520/436/original/cartoon-drawing-of-a-chef-vector.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Join Our Community</h5>
+                    <p class="card-text">Click here to join a community of chefs who want to expand thier repitoir!</p>
+                    <a href="https://cook.theelliotthomestead.com/" class="btn btn-primary">Join Now!</a>
+                </div>
+            </div>
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Fun Cooking Riddle!
+                </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 300px;">
+                        What vegetable is the king of rock and roll?
+                        <p>
+                        <center>- Elvis Parsley - </p></center>
+                    </div>
+                </div>
+            </div>
         </Center>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
@@ -29,20 +80,12 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <footer>
-            <p>
-            <center>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</center>
-            </p>
-            <p>
-            <center>Author: Ethan Dennis:    <a href="edennis@fwparker.org">edennis@fwparker.org</a></center>
+        <div id="footer">
+            <center>Author: Ethan Dennis:    <a href=mailto:"edennis@fwparker.org">edennis@fwparker.org</a></center>
             </p>
             <p>
             <center> ©2023</center>
             </p>
-        </footer>
+        </div>
     </body>
 </html>
