@@ -27,17 +27,18 @@ padding:50px;
 font-size: 35px;
 color:indianred;
 }
-a { color:red } /* Globally */
+a { color:indianred } /* Globally */
 /* Each state */
-a:visited { text-decoration: none; color:red; }
-a:hover { text-decoration: none; color:red; }
-a:focus { text-decoration: none; color:red; }
-a:hover, a:active { text-decoration: none; color:red }
+/*a:visited { text-decoration: none; color:indianred; }*/
+a:hover { text-decoration: none; color:black; }
+/*a:focus { text-decoration: none; color:indianred; }*/
+/*a:hover, a:active { text-decoration: none; color:indianred; }*/
 #footer{
 border: solid black 3px;
 padding-top: 10px;
 font-size: 15px;
 font-weight:none;
+margin:20px;
 }
 #cereal{
 border:indianred 2px dashed ;
