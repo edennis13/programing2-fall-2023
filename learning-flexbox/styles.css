@@ -13,3 +13,38 @@
 	display:flex;
 	flex-direction: row;
 	justify-content:space-around;
+}
+#parrent{
+	display: flex;
+	flex-direction: column;
+	border:blue dashed 3px;
+	padding:3px;
+}
+
+/*.item{
+	display:felx;
+	flex-direction: row;
+	border:red 2px solid;*/
+
+
+#footer{
+	background-color: blue;
+	border: red 3px solid;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-end;
+	height:50px;
+
+}
+
+#everything{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border:green 3px solid;
+	height:100vh;
+
+}
+
+
+
