@@ -3,8 +3,12 @@
 	width: 200px;
 	background-color: green;
 	border: blue 3px solid;
-	text-align: center;
+/*	text-align: center;*/
 	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -14,11 +18,16 @@
 	flex-direction: row;
 	justify-content:space-around;
 }
-#parrent{
+#gallery{
 	display: flex;
 	flex-direction: column;
 	border:blue dashed 3px;
 	padding:3px;
+}
+#profile{
+	background-color: pink;
+	width:100%;
+	margin:10px;
 }
 
 /*.item{
@@ -31,9 +40,10 @@
 	background-color: blue;
 	border: red 3px solid;
 	display:flex;
-	flex-direction:column;
-	justify-content: flex-end;
+	flex-direction:row;
+	justify-content: center;
 	height:50px;
+
 
 }
 
@@ -43,6 +53,32 @@
 	justify-content: space-between;
 	border:green 3px solid;
 	height:100vh;
+
+}
+
+.larger{
+	background-color: lightgreen;
+	margin:10px;
+	width:100%;
+	flex:3;
+
+	
+}
+
+.smaller{
+	background-color: pink;
+	margin:10px;
+	width:100%;
+	flex:1;
+	
+	
+}
+
+#content{
+	display: flex;
+	flex-direction:row;
+
+
 
 }
 
