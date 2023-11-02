@@ -1,0 +1,35 @@
+/*body{
+	background-color: green;
+}*/
+#header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border: black solid 3px;
+	padding:5px;
+
+}
+
+#title{
+	border: red solid 3px;
+	padding: 5px;
+}
+
+#info-box{
+	border: red solid 3px;
+	padding: 5px;
+}
+
+#flex-containter{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+#parent{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
