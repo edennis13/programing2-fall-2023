@@ -4,22 +4,25 @@ body{
 #header{
 	display:flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	border: black solid 3px;
+/*	border: black solid 3px;*/
 	padding:5px;
+	margin-bottom: 20px;
 
 }
 
 #title{
-	border: red solid 3px;
+/*	border: red solid 3px;*/
 	padding: 5px;
 	
 }
 
 #info-box{
-	border: red solid 3px;
+	border: white dashed 3px;
 	padding: 5px;
+	margin-bottom: 10px;
+
 	
 }
 
@@ -40,7 +43,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	margin:5px;
-	border: red 3px dashed;
+/*	border: red 3px dashed;*/
 
 }
 
@@ -49,7 +52,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
-	border: dashed black 3px;
+	border: dashed white 3px;
 	margin:50px;
 }
 
@@ -58,7 +61,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
-	border: dashed black 3px;
+	border: dashed white 3px;
 	margin:50px;
 }
 
@@ -80,14 +83,15 @@ body{
 .score{
 	margin: 10px;
 	padding:10px;
-	border: red solid 5px;
+	border: white solid 5px;
 }
 
 #options{
-	border: black solid 3px;
+/*	border: black solid 3px;*/
 	display:flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	margin-bottom:30px;
 }
 
 #hit{
@@ -121,3 +125,15 @@ body{
 	justify-content: center;
 	flex:1;
 }
+
+#upper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+*{
+	font-family: 'fantasy;',copperplate,sans-serif;
+	color: black;
+	font-size: 25px;
