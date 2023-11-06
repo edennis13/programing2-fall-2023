@@ -137,3 +137,31 @@ body{
 	font-family: 'fantasy;',copperplate,sans-serif;
 	color: black;
 	font-size: 25px;
+}
+
+#hit:hover{
+border: red solid 5px;
+color: red;
+}
+
+#stand:hover{
+border: red solid 5px;
+color: red;
+}
+
+#reset:hover{
+border: red solid 5px;
+color: red;
+}
+
+#reset:active{
+	color:black;
+}
+
+#stand:active{
+	color:black;
+}
+
+#hit:active{
+	color:black;
+}
