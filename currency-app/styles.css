@@ -1,0 +1,23 @@
+#flex-parent{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+.money{
+	background-color: green;
+	border: solid 3px black;
+	margin: 20px;
+	padding: 10px;
+
+}
+
+#title{
+	background-color: green;
+	border: dashed 10px black;
+	margin: 20px;
+	padding: 10px;
+	font-size: 50px;
+}
