@@ -9,17 +9,29 @@
 <body>
 	<div id="title"><center> Welcome to Ethan's Currency Exchange!</center></div>
 	<div id="flex-parent">
-		<div class="money"> You entered: <span id="usd">_________</span> USD.</div>
+		<input type ="number" placeholder ="Amount in USD" id = "currency-amount">
+		<select id ="currencies">
+			<option value="">Select a Currency</option>
+			<option value="eur">Euro (EUR)</option>
+			<option value="gbp">Brittish Pound (GBP)</option>
+			<option value="cad">Canadian Dollar (CAD)</option>
+			<option value="chf">Swiss Franc (CHF)</option>
+			<option value="jpy">Japanese Yen (JPY)</option>
 
-		<div class="money"> That is equal to: <span id="eur">_________</span> EUR.</div>
+		</select>
+		<button onclick="convert()">Submit</button>
+		<div id ="converted-value"></div>
+		<!-- <div class="money"> You entered: <span id="usd">_________</span> USD.</div> -->
 
-		<div class="money"> That is equal to: <span id="gbp">_________</span> GBP.</div>
+		<!-- <div class="money"> That is equal to: <span id="eur">_________</span> EUR.</div> -->
+
+		<!-- <div class="money"> That is equal to: <span id="gbp">_________</span> GBP.</div>
 
 		<div class="money"> That is equal to: <span id="cad">_________</span> CAD.</div>
 
 		<div class="money"> That is equal to: <span id="chf">_________</span> CHF.</div>
 
-		<div class="money"> That is equal to: <span id="jpy">_________</span> JPY.</div>
+		<div class="money"> That is equal to: <span id="jpy">_________</span> JPY.</div> -->
 	</div>
 
 <script type="text/javascript" src="script.js"></script>
