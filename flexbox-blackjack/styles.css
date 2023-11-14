@@ -1,167 +1,155 @@
-body{
-	background-color: #14ba46;
-}
-#header{
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-/*	border: black solid 3px;*/
-	padding:5px;
-	margin-bottom: 20px;
-
+body {
+    background-color: #14ba46;
 }
 
-#title{
-/*	border: red solid 3px;*/
-	padding: 5px;
-	
-}
-
-#info-box{
-	border: white dashed 3px;
-	padding: 5px;
-	margin-bottom: 10px;
-
-	
-}
-
-#flex-containter{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: stretch;
-}
-
-#parent{
-	display:flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.cards{
-	display: flex;
-	flex-direction: row;
-	margin:5px;
-/*	border: red 3px dashed;*/
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
 
 }
 
-#player{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	border: dashed white 3px;
-	margin:50px;
-}
-
-#dealer{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	border: dashed white 3px;
-	margin:50px;
-}
-
-.card-1{
-	border: solid 3px black;
-	margin:3px;
-}
-
-.card-2{
-	border: solid 3px black;
-	margin:3px;
-}
-
-.card-3{
-	border: solid 3px black;
-	margin:3px;
-}
-
-.score{
-	margin: 10px;
-	padding:10px;
-	border: white solid 5px;
-}
-
-#options{
-/*	border: black solid 3px;*/
-	display:flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	margin-bottom:30px;
-}
-
-#hit{
-	background-color: whitesmoke;
-	border:black solid 4px;
-	padding:5px;
-	margin:5px;
-	display:flex;
-	justify-content: center;
-	flex:2;
-}
-
-#stand{
-	background-color: whitesmoke;
-	border:black solid 4px;
-	padding:5px;
-	margin:5px;
-	display:flex;
-	justify-content: center;
-	flex:2;
-	
+#title {
+    padding: 5px;
 
 }
 
-#reset{
-	background-color: whitesmoke;
-	border:black solid 4px;
-	padding:5px;
-	margin:5px;
-	display:flex;
-	justify-content: center;
-	flex:1;
+#info-box {
+    border: white dashed 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+
 }
 
-#upper{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+#flex-containter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-*{
-	font-family: 'fantasy;',copperplate,sans-serif;
-	color: black;
-	font-size: 25px;
+#parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-#hit:hover{
-border: red solid 5px;
-color: red;
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+
 }
 
-#stand:hover{
-border: red solid 5px;
-color: red;
+#player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed white 3px;
+    margin: 50px;
 }
 
-#reset:hover{
-border: red solid 5px;
-color: red;
+#dealer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed white 3px;
+    margin: 50px;
 }
 
-#reset:active{
-	color:black;
+.card {
+    border: solid 3px black;
+    margin: 3px;
 }
 
-#stand:active{
-	color:black;
+
+.score {
+    margin: 10px;
+    padding: 10px;
+    border: white solid 5px;
 }
 
-#hit:active{
-	color:black;
+#options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+#hit {
+    background-color: whitesmoke;
+    border: black solid 4px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+#stand {
+    background-color: whitesmoke;
+    border: black solid 4px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+
+
+}
+
+#reset {
+    background-color: whitesmoke;
+    border: black solid 4px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    font-family: 'fantasy;', copperplate, sans-serif;
+    color: black;
+    font-size: 25px;
+}
+
+#hit:hover {
+    border: red solid 5px;
+    color: red;
+}
+
+#stand:hover {
+    border: red solid 5px;
+    color: red;
+}
+
+#reset:hover {
+    border: red solid 5px;
+    color: red;
+}
+
+#reset:active {
+    color: black;
+}
+
+#stand:active {
+    color: black;
+}
+
+#hit:active {
+    color: black;
 }
