@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Name Generator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="title">
+            <center> Rapper Name Generator</center>
+        </div>
+        <div id="flex-parent">
+            <div>What month were you born?</div>
+            <select id ="month">
+                <option value="">Chose a Month</option>
+                <option value="jan">JAN</option>
+                <option value="feb">FEB</option>
+                <option value="mar">MAR</option>
+                <option value="apr">APR</option>
+                <option value="may">MAY</option>
+                <option value="jun">JUN</option>
+                <option value="jul">JUL</option>
+                <option value="aug">AUG</option>
+                <option value="sep">SEP</option>
+                <option value="oct">OCT</option>
+                <option value="nov">NOV</option>
+                <option value="dec">DEC</option>
+            </select>
+            <div>How old are you?</div>
+            <input type ="number" placeholder ="Enter Age" id = "age">
+            <div>What is your eye color?</div>
+            <select id ="eye">
+                <option value="">Eye Color</option>
+                <option value="blu">Blue</option>
+                <option value="bla">Black</option>
+                <option value="grn">Green</option>
+                <option value="brn">Brown</option>
+                <option value="oth">Other</option>
+            </select>
+            <button onclick="go()">Submit</button>
+            <div id ="output-name"></div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

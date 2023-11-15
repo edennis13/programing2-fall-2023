@@ -11,27 +11,27 @@ console.log(currency);
 
 if (currency == "eur"){
 	let newAmount = usd*0.94;
-	convertedValueDiv.innerText = newAmount;
+	convertedValueDiv.innerText = "€ " + newAmount;
 
 } 
-else if(currency = "gbp"){
+else if(currency == "gbp"){
 	let newAmount = usd*0.82;
-	convertedValueDiv.innerText = newAmount;
+	convertedValueDiv.innerText ="£ " + newAmount;
 }
-else if(currency = "cad"){
+else if(currency == "cad"){
 	let newAmount = usd*0.38;
-	convertedValueDiv.innerText = newAmount;
+	convertedValueDiv.innerText ="CA $ " + newAmount;
 }
-else if(currency = "chf"){
+else if(currency == "chf"){
 	let newAmount = usd*0.90;
-	convertedValueDiv.innerText = newAmount;
+	convertedValueDiv.innerText = "₣ " + newAmount;
 }
-else if(currency = "jpy"){
+else if(currency == "jpy"){
 	let newAmount = usd*152.52;
-	convertedValueDiv.innerText = newAmount;
+	convertedValueDiv.innerText = "¥ " + newAmount;
 }
 else{
-	
+	convertedValueDiv.innerText = "ENTER A VALID CURRENCY";
 }
 
 // console.log(newAmount)
