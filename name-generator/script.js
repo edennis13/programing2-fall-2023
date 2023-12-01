@@ -3,6 +3,28 @@ function go() {
     let age = document.getElementById("age").value;
     let eyeColor = document.getElementById("eye").value;
     let outputDiv = document.getElementById("output-name");
+    const random = [
+        "Blaze Rhyme",
+        "Cipher King",
+        "Nova Verse",
+        "Luna Lyric",
+        "Titan Flow",
+        "Quantum Quill",
+        "Zenith Rhythm",
+        "Stellar Spit",
+        "Eclipse Echo",
+        "Vortex Vibe",
+        "Nebula Nectar",
+        "Orion Rhyme",
+        "Galaxy Groove",
+        "Pinnacle Poet",
+        "Radiant Rap",
+        "Celestial Cadence",
+        "Astral Anthem",
+        "Supernova Serenade",
+        "Infinity Ink",
+        "Lyric Labyrinth"
+    ]
     console.log(month)
     console.log(age)
     console.log(eyeColor)
@@ -18,7 +40,7 @@ function go() {
     } else if ((month == "dec") && (age == 17) && (eyeColor == "blu")) {
         outputDiv.innerText = "Your Rapper Name is:" + " Ethan Dennis";
     } else {
-        outputDiv.innerText = "Your Rapper Name is:" + " LaughTrackLyricist";
+        outputDiv.innerText = "Your Rapper Name is:" + (random[(Math.floor(Math.random() * random.length))]);;
     }
 
 
