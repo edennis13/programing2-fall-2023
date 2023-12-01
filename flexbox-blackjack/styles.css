@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
 
 }
 
@@ -40,10 +40,23 @@ body {
 
 .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 5px;
 
 }
+
+.cards-top{
+    display:flex;
+    flex-dirrection:row;
+    margin:5px;
+}
+
+.cards-bottom{
+    display:flex;
+    flex-dirrection:row;
+    margin:5px;
+}
+
 
 #player {
     display: flex;
@@ -64,7 +77,6 @@ body {
 }
 
 .card {
-    border: solid 3px black;
     margin: 3px;
 }
 
