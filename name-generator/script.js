@@ -40,7 +40,7 @@ function go() {
     } else if ((month == "dec") && (age == 17) && (eyeColor == "blu")) {
         outputDiv.innerText = "Your Rapper Name is:" + " Ethan Dennis";
     } else {
-        outputDiv.innerText = "Your Rapper Name is:" + (random[(Math.floor(Math.random() * random.length))]);;
+        outputDiv.innerText = "Your Rapper Name is:" + (random[(Math.floor(Math.random() * random.length))]);
     }
 
 
