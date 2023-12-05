@@ -3,9 +3,9 @@ let dcardSpace2 = document.getElementById("dcard2");
 let dcardSpace3 = document.getElementById("dcard3");
 let dcardSpace4 = document.getElementById("dcard4");
 let pcardSpace1 = document.getElementById("pcard1");
-let pcardSpace2 = document.getElementById("pcard1");
-let pcardSpace3 = document.getElementById("pcard1");
-let pcardSpace4 = document.getElementById("pcard1");
+let pcardSpace2 = document.getElementById("pcard2");
+let pcardSpace3 = document.getElementById("pcard3");
+let pcardSpace4 = document.getElementById("pcard4");
 let playerScoreElement = document.getElementById("playerScore");
 let dealerScoreElement = document.getElementById("dealerScore");
 let hitButton = document.getElementById("hit");
@@ -19,8 +19,15 @@ let cardDeck  = [];
 let userCards = [];
 let dealerCards = [];
 
+let cardScoreValues = {
+  '2H': 2, '3H': 3, '4H': 4, '5H': 5, '6H': 6, '7H': 7, '8H': 8, '9H': 9, '10H': 10, 'JH': 10, 'QH': 10, 'KH': 10, 'AH': 1,
+  '2D': 2, '3D': 3, '4D': 4, '5D': 5, '6D': 6, '7D': 7, '8D': 8, '9D': 9, '10D': 10, 'JD': 10, 'QD': 10, 'KD': 10, 'AD': 1,
+  '2C': 2, '3C': 3, '4C': 4, '5C': 5, '6C': 6, '7C': 7, '8C': 8, '9C': 9, '10C': 10, 'JC': 10, 'QC': 10, 'KC': 10, 'AC': 1,
+  '2S': 2, '3S': 3, '4S': 4, '5S': 5, '6S': 6, '7S': 7, '8S': 8, '9S': 9, '10S': 10, 'JS': 10, 'QS': 10, 'KS': 10, 'AS': 1,
+};
+
 function drawCard(cardList){
-	let randomNum = (cardList[(Math.floor(Math.random() * (cardList.length-1)))]);
+	let randomNum = Math.floor(Math.random() * (cardList.length-1));
 	const drawnCard = cardList.splice(randomNum, 1)[0];
 	return drawnCard;
 }
@@ -58,17 +65,26 @@ function reset(){
 
 	dcardSpace1.src = ("images/back.png");
 	dcardSpace2.src = "images/" + dealerCard2 + ".svg";
-	console.log (drawnCard)
+
+	pcardSpace1.src = "images/" + userCard1 + ".svg";
+	pcardSpace2.src = "images/" + userCard2 + ".svg";
 
 	//calculate dealer score
 
+	dealerScore = cardScoreValues[dealerCard1] + cardScoreValues[dealerCard2];
+
 	//calculate user score
+	userScore = cardScoreValues[userCard1] + cardScoreValues[userCard2];
 
 	// update scores on the ui
+	dealerScoreElement.innerText = "Dealer Score:" + "?" + "(" + dealerScore + ")";
+	playerScoreElement.innerText = "Your Score:" + userScore;
+	
 
-	// 
+	// enable hit and stand buttons
 
-	// console.log(cardDeck[(Math.floor(Math.random() * (cardDeck.length-1)))])
+	hitButton.disabled = false;
+	standButton.disabled = false;
 }
 
 function stand(){
@@ -76,9 +92,36 @@ function stand(){
 }
 
 function hit(){
-	alert("you clicked hit");
-}
+	// alert("you clicked hit");
 
+	// draw card 
+	if (userCards.length == 2){
+		let userCard3 = drawCard(cardDeck);
+		userCards.push(userCard3);
+	// change score
+		userScore =  userScore +  cardScoreValues[userCard3];
+	// update UI card
+		pcardSpace3.src = "images/" + userCard3 + ".svg";
+	//update UI score
+		playerScoreElement.innerText = "Your Score:" + userScore;
+	}
+
+	else if (userCards.length == 3){
+		let userCard4 = drawCard(cardDeck);
+		userCards.push(userCard4);
+	// change score
+		userScore =  userScore +  cardScoreValues[userCard4];
+	// update UI card
+		pcardSpace4.src = "images/" + userCard4 + ".svg";
+	//update UI score
+		playerScoreElement.innerText = "Your Score:" + userScore;
+	}
+
+	else{
+		hitButton.disabled = true;
+		standButton.disabled = true;
+	}
+}
 
 
 
