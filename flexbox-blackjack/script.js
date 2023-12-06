@@ -92,29 +92,13 @@ function reset(){
 	standButton.disabled = false;
 
 
-	while (true){
-			if (userScore > 21){
-				infoBoxElement.innerText = "You Bust!  Press Reset to play again.";
-			}
-
-			else if (dealerScore > 17 && userScore > dealerScore){
-				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
-			}
-
-			else if (userScore < dealerScore){
-				infoBoxElement.innerText = "Dealer Wins!  Press Reset to play again.";
-			}
-
-			else{
-					infoBoxElement.innerText = "Your turn";
-			}
-	}
+	
 }
 
 function stand(){
 
 	if (dealerCards.length < 4 && dealerScore <= 16){
-		for (let i =0; i<4; i++){
+		for (let i =0; i<10; i++){
 			if(dealerCards.length == 2){
 				let dealerCard3 = drawCard(cardDeck);
 				dealerCards.push(dealerCard3);
@@ -143,6 +127,30 @@ function stand(){
 			
 	}
 
+
+
+			if (userScore > 21){
+				infoBoxElement.innerText = "You Bust!  Press Reset to play again.";
+			}
+
+			else if (dealerScore > 17 && userScore > dealerScore){
+				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
+			}
+
+			else if (userScore < dealerScore && dealerScore <22){
+				infoBoxElement.innerText = "Dealer Wins!  Press Reset to play again.";
+			}
+			else if (userScore == 21 ){
+				infoBoxElement.innerText = "You got BlackJack! You win!  Press Reset to play again.";
+			}
+			else if (dealerScore == 21 ){
+				infoBoxElement.innerText = "The dealer got BlackJack! You lose!  Press Reset to play again.";
+			}
+
+			else{
+					infoBoxElement.innerText = "Your turn";
+			}
+	
 }
 
 function hit(){
@@ -179,9 +187,30 @@ function hit(){
 }
 
 
-	
+
+			if (userScore > 21){
+				infoBoxElement.innerText = "You Bust!  Press Reset to play again.";
+			}
+
+			else if (userScore > dealerScore){
+				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
+			}
+
+			else if (userScore < dealerScore){
+				infoBoxElement.innerText = "Dealer Wins!  Press Reset to play again.";
+			}
+
+			else{
+					infoBoxElement.innerText = "Your turn";
+			}
 
 
+// while (i == 0){
+// 	i=0
+// 	if (userScore >21){
+// 		reset()
+// 	}
+// }
 
 
 
