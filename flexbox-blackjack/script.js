@@ -65,9 +65,14 @@ function reset(){
 
 	dcardSpace1.src = ("images/back.png");
 	dcardSpace2.src = "images/" + dealerCard2 + ".svg";
+	dcardSpace3.src = "images/blank.svg"
+	dcardSpace4.src = "images/blank.svg" 
 
 	pcardSpace1.src = "images/" + userCard1 + ".svg";
 	pcardSpace2.src = "images/" + userCard2 + ".svg";
+	pcardSpace3.src = "images/blank.svg"
+	pcardSpace4.src = "images/blank.svg" 
+
 
 	//calculate dealer score
 
@@ -85,14 +90,64 @@ function reset(){
 
 	hitButton.disabled = false;
 	standButton.disabled = false;
+
+
+	while (true){
+			if (userScore > 21){
+				infoBoxElement.innerText = "You Bust!  Press Reset to play again.";
+			}
+
+			else if (dealerScore > 17 && userScore > dealerScore){
+				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
+			}
+
+			else if (userScore < dealerScore){
+				infoBoxElement.innerText = "Dealer Wins!  Press Reset to play again.";
+			}
+
+			else{
+					infoBoxElement.innerText = "Your turn";
+			}
+	}
 }
 
 function stand(){
-	alert("you clicked stand");
+
+	if (dealerCards.length < 4 && dealerScore <= 16){
+		for (let i =0; i<4; i++){
+			if(dealerCards.length == 2){
+				let dealerCard3 = drawCard(cardDeck);
+				dealerCards.push(dealerCard3);
+				dealerScore =  dealerScore +  cardScoreValues[dealerCard3];
+				// update UI card
+				dcardSpace3.src = "images/" + dealerCard3 + ".svg";
+				//update UI score
+				dealerScoreElement.innerText = "Dealer Score:" + dealerScore;
+		}
+		else if (dealerCards.length == 3){
+			let dealerCard4 = drawCard(cardDeck);
+			dealerCards.push(dealerCard4);
+			dealerScore =  dealerScore +  cardScoreValues[dealerCard4];
+			// update UI card
+			dcardSpace4.src = "images/" + dealerCard4 + ".svg";
+			//update UI score
+			dealerScoreElement.innerText = "Dealer Score:" + dealerScore;
+		}
+		}
+		
+	}
+
+	else{
+		hitButton.disabled = true;
+		standButton.disabled = true;
+			
+	}
+
 }
 
 function hit(){
 	// alert("you clicked hit");
+
 
 	// draw card 
 	if (userCards.length == 2){
@@ -122,6 +177,10 @@ function hit(){
 		standButton.disabled = true;
 	}
 }
+
+
+	
+
 
 
 
