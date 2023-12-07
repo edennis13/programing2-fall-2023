@@ -82,7 +82,7 @@ function reset(){
 	userScore = cardScoreValues[userCard1] + cardScoreValues[userCard2];
 
 	// update scores on the ui
-	dealerScoreElement.innerText = "Dealer Score:" + "?" + "(" + dealerScore + ")";
+	dealerScoreElement.innerText = "Dealer Score:" + "?";
 	playerScoreElement.innerText = "Your Score:" + userScore;
 	
 
@@ -96,9 +96,10 @@ function reset(){
 }
 
 function stand(){
+	dcardSpace1.src = "images/" + dealerCards[0] + ".svg";
+	dealerScoreElement.innerText = "Dealer Score:" + dealerScore;
+	while (dealerCards.length < 4 && dealerScore <= 16){
 
-	if (dealerCards.length < 4 && dealerScore <= 16){
-		for (let i =0; i<10; i++){
 			if(dealerCards.length == 2){
 				let dealerCard3 = drawCard(cardDeck);
 				dealerCards.push(dealerCard3);
@@ -108,6 +109,7 @@ function stand(){
 				//update UI score
 				dealerScoreElement.innerText = "Dealer Score:" + dealerScore;
 		}
+	
 		else if (dealerCards.length == 3){
 			let dealerCard4 = drawCard(cardDeck);
 			dealerCards.push(dealerCard4);
@@ -117,38 +119,58 @@ function stand(){
 			//update UI score
 			dealerScoreElement.innerText = "Dealer Score:" + dealerScore;
 		}
-		}
 		
-	}
+		}
 
-	else{
-		hitButton.disabled = true;
-		standButton.disabled = true;
-			
-	}
+			hitButton.disabled = true;
+			standButton.disabled = true;
+				
+
 
 
 
 			if (userScore > 21){
 				infoBoxElement.innerText = "You Bust!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
 			}
 
-			else if (dealerScore > 17 && userScore > dealerScore){
+			else if (dealerScore > 17 && userScore > dealerScore && userScore != 21){
 				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
 			}
 
-			else if (userScore < dealerScore && dealerScore <22){
+			else if (dealerScore > 17 && dealerScore < 21 && userScore != 21){
+				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
+			}
+
+			else if (dealerScore > 21){
+				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
+			}
+
+			else if (userScore < dealerScore && dealerScore <22 && dealerScore != 21){
 				infoBoxElement.innerText = "Dealer Wins!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
 			}
 			else if (userScore == 21 ){
 				infoBoxElement.innerText = "You got BlackJack! You win!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
 			}
 			else if (dealerScore == 21 ){
 				infoBoxElement.innerText = "The dealer got BlackJack! You lose!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
 			}
 
 			else{
-					infoBoxElement.innerText = "Your turn";
+					infoBoxElement.innerText = "Working the Magic ...";
 			}
 	
 }
@@ -184,33 +206,23 @@ function hit(){
 		hitButton.disabled = true;
 		standButton.disabled = true;
 	}
-}
-
-
 
 			if (userScore > 21){
 				infoBoxElement.innerText = "You Bust!  Press Reset to play again.";
+				hitButton.disabled = true;
+				standButton.disabled = true;
 			}
 
-			else if (userScore > dealerScore){
-				infoBoxElement.innerText = "You Win!  Press Reset to play again.";
-			}
+			
 
-			else if (userScore < dealerScore){
-				infoBoxElement.innerText = "Dealer Wins!  Press Reset to play again.";
-			}
-
-			else{
-					infoBoxElement.innerText = "Your turn";
-			}
+		
+}
 
 
-// while (i == 0){
-// 	i=0
-// 	if (userScore >21){
-// 		reset()
-// 	}
-// }
+			
+
+
+
 
 
 
