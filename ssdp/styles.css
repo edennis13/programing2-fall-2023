@@ -1,5 +1,5 @@
 .header{
-  border:black solid 3px;
+  border:#2892D7 solid 3px;
   padding:15px;
   display:flex;
   flex-direction: row;
@@ -27,6 +27,22 @@
   margin:4px;
   flex:1;
   background-color:white;
-  border:#6DAEDB solid 2px;
-  color:#6DAEDB;
+  border:#2892D7 solid 2px;
+  color:#2892D7;
+}
+
+#main{
+  background-color: #2892D7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  padding: 70px;
+}
+
+#big-logo{
+  margin-right: 100px;
 }
