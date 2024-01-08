@@ -92,12 +92,13 @@
 .stats{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   font-size: 35px;
   color:white;
   font-weight: bold;
   font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  width: 400px;
   
 
 /*  gap:15px;*/
@@ -142,5 +143,33 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 20px;
 
+}
+
+
+#partners-parent{
+  padding-bottom: 50px;
+}
+
+
+#form-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.form-input{
+  margin: 6px;
+  border:#2892D7 solid 1px;
+}
+
+
+.contact-us{
+  border: #2892D7 solid 2px;
+}
+
+#btn{
+  background-color: #2892D7;
 }

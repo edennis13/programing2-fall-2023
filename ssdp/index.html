@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/44a6658328.js" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="icon" type="image/x-icon" href="/images/fwp.png">
 
 </head>
 <body>
@@ -46,12 +47,12 @@
 	</div>
 	<div id = "stats-row">
 		<div class = "stats">
-			<div><i class="fa-solid fa-calendar-days fa-2xl" style="color: #ffffff; display:inline-block;"></i></div>
+			<div><i class="fa-solid fa-calendar-days fa-2xl" style="color: #ffffff; display:inline-block;" ></i></div>
 			<div class = "number">20+</div>
 			<div>YEARS</div>
 		</div>
 		<div class = "stats">
-			<div><i class="fa-solid fa-map-pin fa-2xl" style="color: #ffffff;"></i></div>
+			<div><i class="fa-solid fa-map-pin fa-2xl" style="color: #ffffff;" ></i></div>
 			<div>Chicago, IL</div>
 		</div>
 		<div class = "stats">
@@ -92,8 +93,14 @@
 	</div>
 	<div class = "footer">
 		<div id = "footer-top">
-			<div id = "contact-us">
-				this is where the info box is going to live
+			<div class = "contact-us">
+				<form method="post" id = "form-parent">
+					<input type="text" name="name" placeholder="Name" id = "name" autocomplete="off" class = "form-input">
+					<input type="email" name="email" placeholder="Email" id = "email" autocomplete="off" class = "form-input">
+					<input type="text" name="subject" placeholder="Subject" id = "subject" autocomplete="off" class = "form-input">
+					<textarea id = "message" placeholder="Message" cols="50" rows="8" class = "form-input"></textarea>
+					<button id = "btn" class = "form-input">Send</button>
+				</form>
 			</div>
 			<div id = "footer-info">
 				<div><img src="images/logo-francis1_0.png" alt="Logo" width="250" height="90"></div>
