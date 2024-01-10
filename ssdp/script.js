@@ -1,8 +1,40 @@
-var btn = document.getElementbyId("btn");
-btn.addEventListener("click", function(e){
-	var name = document.getElementbyId("name").value;
-	var email = document.getElementbyId("email").value;
-	var subject = document.getElementbyId("subject").value;
-	var message = document.getElementbyId("message").value;
+var btn = document.getElementById("btn");
 
-})
+
+
+const publicKey = "vJmuePuDbd3T24u74";
+const serviceKey = "service_16i2aui";
+const templateID = "template_bjqrezb";
+
+
+emailjs.init(publicKey);
+
+btn.addEventListener("click", function(e){
+
+	e.preventDefault();
+	btn.innterText = "Sending..."
+	var name = document.getElementById("name");
+	var email = document.getElementById("email");
+	var message = document.getElementById("message");
+
+	const inputFields = {
+		from_name: name.value,
+		reply_to:email.value,
+		message:message.value
+	};
+
+	emailjs.send(serviceKey, templateID, inputFields)
+	.then(() =>{
+		console.log("btn works")
+		btn.innerText = "Send";
+		name.value = "";
+		email.value = "";
+		message.value = "";
+
+	},(error)=>{
+		console.log(error)
+		btn.innterText = "Something went wrong"
+	});
+});
+
+
