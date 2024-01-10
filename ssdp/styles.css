@@ -27,8 +27,22 @@
   margin:4px;
   flex:1;
   background-color:white;
+/*  border:#2892D7 solid 3px;*/
+  color:#2892D7;
+  border: none;
+  text-decoration: none;
+
+}
+a{
+  margin:4px;
+  flex:1;
+  background-color:white;
   border:#2892D7 solid 3px;
   color:#2892D7;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
 }
 
 #main{
