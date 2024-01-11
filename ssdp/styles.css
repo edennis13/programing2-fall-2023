@@ -187,3 +187,22 @@ a{
 #btn{
   background-color: #2892D7;
 }
+
+#about-us{
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  padding-left:60px;
+}
+
+
+
+#mission-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+

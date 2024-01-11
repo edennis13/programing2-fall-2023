@@ -2,9 +2,16 @@ var btn = document.getElementById("btn");
 
 
 
-const publicKey = "vJmuePuDbd3T24u74";
-const serviceKey = "service_16i2aui";
-const templateID = "template_bjqrezb";
+// const publicKey = "vJmuePuDbd3T24u74"; // Barr
+// const serviceKey = "service_16i2aui"; // Barr
+// const templateID = "template_bjqrezb"; // Barr
+
+
+
+const publicKey = "_ZoMhX6KRGgZXp1eK"; //Ethan
+const serviceKey = "service_ypf56yq"; //Ethan
+const templateID = "template_zmu937j"; //Ethan
+
 
 
 emailjs.init(publicKey);
