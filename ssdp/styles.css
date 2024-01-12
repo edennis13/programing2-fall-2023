@@ -194,6 +194,7 @@ a{
   font-weight: bold;
   font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
   padding-left:60px;
+  background-color: #1B4353;
 }
 
 
@@ -205,4 +206,128 @@ a{
   align-items: center;
 }
 
+#mission-title{
+  color: #1B4353;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
 
+#mission-statement{
+  color: #1B4353;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  padding-bottom:35px;
+  
+}
+
+#our-goals{
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+
+#goals{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+  padding:35px;
+  background-color:#1B4353;
+
+}
+
+#our-goals{
+  background-color:#1B4353;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#mission-parent-title{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+#main-civic{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #1B4353;
+  font-family: 'Open Sans', Montserrat, Arial, Helvetica, sans-serif;
+}
+
+
+#civic-gallery{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+
+}
+
+.upper-lower{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.photo{
+  padding: 20px;
+}
+
+#blue-bottom{
+  background-color:#1B4353;
+  color:#1B4353 ;
+}
+
+.title{
+  font-size: 55px;
+
+}
+
+.blurb{
+  font-size: 18px;
+}
+
+
+.education-indiv{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.education-row{
+  background-color:#1B4353;
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+
+#white-top{
+  color: white;
+
+}
+
+#row1{
+  padding-top:30px;
+}
+
+#row3{
+  padding-bottom:30px;
+}
